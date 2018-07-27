@@ -1,7 +1,7 @@
 public class TypeApplication : Gtk.Application {
     public TypeApplication() {
         Object(
-            application_id: "com.github.ryanafrish7.type",
+            application_id: Build.PROJECT_NAME,
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
