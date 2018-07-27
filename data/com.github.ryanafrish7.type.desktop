@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Type
+GenericName=Type
+Comment=An app for practicing typing
+Categories=Utility;Education;
+Exec=com.github.ryanafrish7.type
+Icon=application-default-icon
+Terminal=false
+Type=Application
