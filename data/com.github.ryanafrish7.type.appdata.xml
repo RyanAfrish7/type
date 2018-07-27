@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Your Name <ryanafrish7@gmail.com> -->
+<component type="desktop">
+  <id>com.github.ryanafrish7.type.desktop</id>
+  <metadata_license>MIT</metadata_license>
+  <name>Type</name>
+  <summary>Type quicker.</summary>
+  <description>
+    <p>Get your work done quickly by improving you typing speed signficantly.</p>
+  </description>
+    <custom>
+     <value key="x-appcenter-suggested-price">4</value>
+  </custom>
+</component>
