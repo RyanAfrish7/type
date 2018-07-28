@@ -1,6 +1,8 @@
 type_files = files(
     'Application.vala',
-    'MainWindow.vala'
+    'MainWindow.vala',
+    'layouts/HomeLayout.vala',
+    'widgets/KeyboardWidget.vala'
 )
 
 config_file = configure_file(
