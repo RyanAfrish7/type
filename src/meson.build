@@ -1,6 +1,7 @@
 type_files = files(
     'Application.vala',
     'MainWindow.vala',
+    'core/KeyboardLayout.vala',
     'layouts/HomeLayout.vala',
     'widgets/KeyboardWidget.vala'
 )
