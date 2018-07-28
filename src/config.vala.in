@@ -1,3 +1,4 @@
 namespace Build {
+    public const string DATA_DIR = "@DATA_DIR@";
     public const string PROJECT_NAME = "@PROJECT_NAME@";
 }

@@ -10,6 +10,7 @@ dependencies = [
 
 conf_data = configuration_data()
 conf_data.set('PROJECT_NAME', meson.project_name())
+conf_data.set('DATA_DIR', join_paths(get_option('prefix'), get_option('datadir'), meson.project_name()))
 
 subdir('data')
 subdir('src')
