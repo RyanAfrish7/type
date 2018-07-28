@@ -2,11 +2,12 @@
 	"name": "QWERTY - US Layout",
   "keys": [
     {
-    	"key": "a",
-				"top": 20,
-				"left": 20,
-				"width": 60,
-				"height": 60
+			"name": "KeyA",
+			"key": "a",
+			"top": 20,
+			"left": 20,
+			"width": 60,
+			"height": 60
 		}
 	]
 }

@@ -3,7 +3,8 @@ type_files = files(
     'MainWindow.vala',
     'core/KeyboardLayout.vala',
     'layouts/HomeLayout.vala',
-    'widgets/KeyboardWidget.vala'
+    'widgets/KeyboardWidget.vala',
+    'widgets/KeyWidget.vala'
 )
 
 config_file = configure_file(
