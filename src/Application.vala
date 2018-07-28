@@ -1,4 +1,6 @@
 public class TypeApplication : Gtk.Application {
+    MainWindow main_window;
+
     public TypeApplication() {
         Object(
             application_id: Build.PROJECT_NAME,
@@ -7,15 +9,14 @@ public class TypeApplication : Gtk.Application {
     }
 
     protected override void activate () {
-        var main_window = new Gtk.ApplicationWindow (this);
-        main_window.default_height = 640;
-        main_window.default_width = 720;
-        main_window.title = "Type";
-        
-        var label = new Gtk.Label ("Practice typing");
-        main_window.add (label);
+        if (main_window == null) {
+            main_window = new MainWindow(this);
 
-        main_window.show_all ();
+            add_window(main_window);
+            main_window.show_all();
+        } else {
+            main_window.present();
+        }
     }
 
     public static int main (string[] args) {

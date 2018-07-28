@@ -1,5 +1,6 @@
 type_files = files(
-    'Application.vala'
+    'Application.vala',
+    'MainWindow.vala'
 )
 
 config_file = configure_file(
