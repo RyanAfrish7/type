@@ -3,6 +3,9 @@ class KeyboardLayout {
         public string key;
         public string name;
 
+        public string mod_key;
+        public string mod_name;
+
         public int row;
         public int width;
 
@@ -13,6 +16,8 @@ class KeyboardLayout {
 
             name = obj.get_string_member ("name");
             key = obj.get_string_member ("key");
+            mod_name = obj.get_string_member ("mod_name");
+            mod_key = obj.get_string_member ("mod_key");
             row = (int) obj.get_int_member ("row");
             width = (int) obj.get_int_member ("width");
 

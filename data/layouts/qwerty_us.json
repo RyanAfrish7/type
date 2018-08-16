@@ -4,85 +4,111 @@
 	"margin": 10,
 	"keys": [
 		{
-			"name": "BackQuote",
+			"name": "grave",
 			"key": "`",
+			"mod_name": "asciitilde",
+			"mod_key": "~",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit1",
+			"name": "1",
 			"key": "1",
+			"mod_name": "exclam",
+			"mod_key": "!",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit2",
+			"name": "2",
 			"key": "2",
+			"mod_name": "at",
+			"mod_key": "@",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit3",
+			"name": "3",
 			"key": "3",
+			"mod_name": "numbersign",
+			"mod_key": "#",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit4",
+			"name": "4",
 			"key": "4",
+			"mod_name": "dollar",
+			"mod_key": "$",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit5",
+			"name": "5",
 			"key": "5",
+			"mod_name": "percent",
+			"mod_key": "%",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit6",
+			"name": "6",
 			"key": "6",
+			"mod_name": "asciicircum",
+			"mod_key": "^",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit7",
+			"name": "7",
 			"key": "7",
+			"mod_name": "ampersand",
+			"mod_key": "&",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit8",
+			"name": "8",
 			"key": "8",
+			"mod_name": "asterisk",
+			"mod_key": "*",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit9",
+			"name": "9",
 			"key": "9",
+			"mod_name": "parenleft",
+			"mod_key": "(",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Digit0",
+			"name": "0",
 			"key": "0",
+			"mod_name": "parenright",
+			"mod_key": ")",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Minus",
+			"name": "minus",
 			"key": "-",
+			"mod_name": "underscore",
+			"mod_key": "_",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Equal",
+			"name": "equal",
 			"key": "=",
+			"mod_name": "plus",
+			"mod_key": "+",
 			"row": 0,
 			"width": 50
 		},
 		{
-			"name": "Backspace",
+			"name": "BackSpace",
 			"key": "⟵",
 			"row": 0,
 			"width": 90,
@@ -96,239 +122,307 @@
 			"is_nongraphic": true
 		},
 		{
-			"name": "KeyQ",
+			"name": "q",
 			"key": "q",
+			"mod_name": "Q",
+			"mod_key": "Q",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyW",
+			"name": "w",
 			"key": "w",
+			"mod_name": "W",
+			"mod_key": "W",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyE",
+			"name": "e",
 			"key": "e",
+			"mod_name": "E",
+			"mod_key": "E",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyR",
+			"name": "r",
 			"key": "r",
+			"mod_name": "R",
+			"mod_key": "R",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyT",
+			"name": "t",
 			"key": "t",
+			"mod_name": "T",
+			"mod_key": "T",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyY",
+			"name": "y",
 			"key": "y",
+			"mod_name": "Y",
+			"mod_key": "Y",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyU",
+			"name": "u",
 			"key": "u",
+			"mod_name": "U",
+			"mod_key": "U",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyI",
+			"name": "i",
 			"key": "i",
+			"mod_name": "I",
+			"mod_key": "I",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyO",
+			"name": "o",
 			"key": "o",
+			"mod_name": "O",
+			"mod_key": "O",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "KeyP",
+			"name": "p",
 			"key": "p",
+			"mod_name": "P",
+			"mod_key": "P",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "BracketLeft",
+			"name": "bracketleft",
 			"key": "[",
+			"mod_name": "braceleft",
+			"mod_key": "{",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "BracketRight",
+			"name": "bracketright",
 			"key": "]",
+			"mod_name": "braceright",
+			"mod_key": "}",
 			"row": 1,
 			"width": 50
 		},
 		{
-			"name": "Backslash",
+			"name": "backslash",
 			"key": "\\",
+			"mod_name": "bar",
+			"mod_key": "|",
 			"row": 1,
 			"width": 60
 		},
 		{
-			"name": "CapsLock",
+			"name": "Caps_Lock",
 			"key": "caps lock",
 			"row": 2,
 			"width": 100,
 			"is_nongraphic": true
 		},
 		{
-			"name": "KeyA",
+			"name": "a",
 			"key": "a",
+			"mod_name": "A",
+			"mod_key": "A",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyS",
+			"name": "s",
 			"key": "s",
+			"mod_name": "S",
+			"mod_key": "S",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyD",
+			"name": "d",
 			"key": "d",
+			"mod_name": "D",
+			"mod_key": "D",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyF",
+			"name": "f",
 			"key": "f",
+			"mod_name": "F",
+			"mod_key": "F",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyG",
+			"name": "g",
 			"key": "g",
+			"mod_name": "G",
+			"mod_key": "G",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyH",
+			"name": "h",
 			"key": "h",
+			"mod_name": "H",
+			"mod_key": "H",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyJ",
+			"name": "j",
 			"key": "j",
+			"mod_name": "J",
+			"mod_key": "J",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyK",
+			"name": "k",
 			"key": "k",
+			"mod_name": "K",
+			"mod_key": "K",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "KeyL",
+			"name": "l",
 			"key": "l",
+			"mod_name": "L",
+			"mod_key": "L",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "Semicolon",
+			"name": "semicolon",
 			"key": ";",
+			"mod_name": "colon",
+			"mod_key": ":",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "Quote",
+			"name": "apostrophe",
 			"key": "'",
+			"mod_name": "quotedbl",
+			"mod_key": "\"",
 			"row": 2,
 			"width": 50
 		},
 		{
-			"name": "Enter",
+			"name": "Return",
 			"key": "enter",
 			"row": 2,
 			"width": 100,
 			"is_nongraphic": true
 		},
 		{
-			"name": "ShiftLeft",
+			"name": "Shift_L",
 			"key": "shift ⇧",
 			"row": 3,
 			"width": 130,
 			"is_nongraphic": true
 		},
 		{
-			"name": "KeyZ",
+			"name": "z",
 			"key": "z",
+			"mod_name": "Z",
+			"mod_key": "Z",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "KeyX",
+			"name": "x",
 			"key": "x",
+			"mod_name": "X",
+			"mod_key": "X",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "KeyC",
+			"name": "c",
 			"key": "c",
+			"mod_name": "C",
+			"mod_key": "C",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "KeyV",
+			"name": "v",
 			"key": "v",
+			"mod_name": "V",
+			"mod_key": "V",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "KeyB",
+			"name": "b",
 			"key": "b",
+			"mod_name": "B",
+			"mod_key": "B",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "KeyN",
+			"name": "n",
 			"key": "n",
+			"mod_name": "Q",
+			"mod_key": "Q",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "KeyM",
+			"name": "m",
 			"key": "m",
+			"mod_name": "M",
+			"mod_key": "M",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "Comma",
+			"name": "comma",
 			"key": ",",
+			"mod_name": "less",
+			"mod_key": "<",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "Period",
+			"name": "period",
 			"key": ".",
+			"mod_name": "greater",
+			"mod_key": ">",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "Slash",
+			"name": "slash",
 			"key": "/",
+			"mod_name": "question",
+			"mod_key": "?",
 			"row": 3,
 			"width": 50
 		},
 		{
-			"name": "ShiftRight",
+			"name": "Shift_R",
 			"key": "shift ⇧",
 			"row": 3,
 			"width": 130,
 			"is_nongraphic": true
 		},
 		{
-			"name": "ControlLeft",
+			"name": "Control_L",
 			"key": "ctrl",
 			"row": 4,
 			"width": 70,
@@ -342,48 +436,48 @@
 			"is_nongraphic": true
 		},
 		{
-			"name": "MetaLeft",
+			"name": "Super_L",
 			"key": "⌘",
 			"row": 4,
 			"width": 50,
 			"is_nongraphic": true
 		},
 		{
-			"name": "AltLeft",
+			"name": "Alt_L",
 			"key": "alt",
 			"row": 4,
 			"width": 50,
 			"is_nongraphic": true
 		},
 		{
-			"name": "Space",
+			"name": "space",
 			"key": " ",
 			"row": 4,
 			"width": 320
 		},
 		{
-			"name": "AltRight",
+			"name": "Alt_R",
 			"key": "alt",
 			"row": 4,
 			"width": 50,
 			"is_nongraphic": true
 		},
 		{
-			"name": "MetaRight",
+			"name": "Super_R",
 			"key": "⌘",
 			"row": 4,
 			"width": 50,
 			"is_nongraphic": true
 		},
 		{
-			"name": "ContextMenu",
+			"name": "Menu",
 			"key": "☰",
 			"row": 4,
 			"width": 50,
 			"is_nongraphic": true
 		},
 		{
-			"name": "ControlRight",
+			"name": "Control_R",
 			"key": "ctrl",
 			"row": 4,
 			"width": 100,
