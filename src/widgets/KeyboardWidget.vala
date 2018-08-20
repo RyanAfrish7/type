@@ -23,8 +23,8 @@ class KeyboardWidget : Gtk.Fixed {
             put (key_widget, lefts.get (key.row), key.row * (layout.key_height + layout.margin));
 
             key_widgets.set (key.name, key_widget);
-            
-            if(key.mod_name != null) {
+
+            if (key.mod_name != null) {
                 key_widgets.set (key.mod_name, key_widget);
             }
 
@@ -57,17 +57,18 @@ class KeyboardWidget : Gtk.Fixed {
             caps_lock = !caps_lock;
 
             foreach (var entry in key_widgets.entries) {
-                if (entry.key.get (0).isalpha ()) {
+                var key = entry.value.get_key (false);
+                if (key.len () == 1 && key.get (0).isalpha ()) {
                     entry.value.show_variant (caps_lock);
                 }
             }
-        } else {
-            if (last_pressed != null) {
-                last_pressed.set_dark_mode (false);
-            }
-
-            last_pressed = key_widgets.get (keyval_name);
         }
+
+        if (last_pressed != null) {
+            last_pressed.set_dark_mode (false);
+        }
+
+        last_pressed = key_widgets.get (keyval_name);
 
         if (last_pressed != null) {
             last_pressed.set_dark_mode (true);
@@ -82,11 +83,13 @@ class KeyboardWidget : Gtk.Fixed {
 
         if (keyval_name == "Shift_L" || keyval_name == "Shift_R") {
             foreach (var entry in key_widgets.entries) {
-                if (entry.key.get (0).isalpha ()) {
+                var key = entry.value.get_key (false);
+
+                if (key.len () == 1 && key.get (0).isalpha ()) {
                     entry.value.show_variant (caps_lock);
                 } else {
                     entry.value.show_variant (false);
-                }            
+                }
             }
             key_widgets.get (keyval_name).set_dark_mode (false);
             return true;

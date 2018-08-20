@@ -32,6 +32,10 @@ class KeyWidget : Gtk.Box {
         }
     }
 
+    public string get_key (bool variant) {
+        return variant ? key.mod_key : key.key;
+    }
+
     public void show_variant (bool variant) {
         label.label = variant && key.mod_key != null ? key.mod_key : key.key;
     }
