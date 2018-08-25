@@ -11,8 +11,6 @@ class MainWindow : Gtk.ApplicationWindow {
     }
 
     construct {
-        default_height = 640;
-        default_width = 720;
         title = "Type";
 
         home_layout = new HomeLayout ();

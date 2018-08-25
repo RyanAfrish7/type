@@ -13,6 +13,8 @@ class KeyboardWidget : Gtk.Fixed {
 
         margin = 10;
 
+        height_request = 300;
+
         foreach (KeyboardLayout.Key key in layout.keys.data) {
             var key_widget = new KeyWidget (key, layout.key_height);
 
