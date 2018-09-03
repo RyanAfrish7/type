@@ -7,7 +7,6 @@ class KeyboardWidget : Gtk.Fixed {
     bool caps_lock = false;
 
     public KeyboardWidget (string layout_file) {
-
         layout = new KeyboardLayout.from_json_file (File.new_for_path (layout_file));
         get_style_context ().add_class ("keyboard");
 
@@ -32,19 +31,14 @@ class KeyboardWidget : Gtk.Fixed {
 
             lefts.set (key.row, lefts.get (key.row) + key.width + layout.margin);
         }
-
-        this.set_can_focus (true);
-        this.add_events (Gdk.EventMask.KEY_PRESS_MASK);
-        this.add_events (Gdk.EventMask.KEY_RELEASE_MASK);
-
-        this.key_press_event.connect (on_key_press);
-        this.key_release_event.connect (on_key_release);
     }
 
-    private bool on_key_press (Gdk.EventKey event) {
-        string keyval_name = Gdk.keyval_name (event.keyval);
-
-        if (keyval_name == "Shift_L" || keyval_name == "Shift_R") {
+    public KeyboardLayout get_keyboard_layout () {
+        return layout;
+    }
+    
+    public void set_shift_pressed (bool pressed, string keyval_name) {
+        if (pressed) {
             foreach (var entry in key_widgets.entries) {
                 if (entry.key.get (0).isalpha ()) {
                     entry.value.show_variant (!caps_lock);
@@ -52,38 +46,10 @@ class KeyboardWidget : Gtk.Fixed {
                     entry.value.show_variant (true);
                 }
             }
+
+
             key_widgets.get (keyval_name).set_dark_mode (true);
-
-            return true;
-        } else if (keyval_name == "Caps_Lock") {
-            caps_lock = !caps_lock;
-
-            foreach (var entry in key_widgets.entries) {
-                var key = entry.value.get_key (false);
-                if (key.len () == 1 && key.get (0).isalpha ()) {
-                    entry.value.show_variant (caps_lock);
-                }
-            }
-        }
-
-        if (last_pressed != null) {
-            last_pressed.set_dark_mode (false);
-        }
-
-        last_pressed = key_widgets.get (keyval_name);
-
-        if (last_pressed != null) {
-            last_pressed.set_dark_mode (true);
-            return true;
-        }
-
-        return false;
-    }
-
-    private bool on_key_release (Gdk.EventKey event) {
-        string keyval_name = Gdk.keyval_name (event.keyval);
-
-        if (keyval_name == "Shift_L" || keyval_name == "Shift_R") {
+        } else {
             foreach (var entry in key_widgets.entries) {
                 var key = entry.value.get_key (false);
 
@@ -93,7 +59,32 @@ class KeyboardWidget : Gtk.Fixed {
                     entry.value.show_variant (false);
                 }
             }
+
             key_widgets.get (keyval_name).set_dark_mode (false);
+        }
+    }
+
+    public void set_caps_lock_state (bool state) {
+        foreach (var entry in key_widgets.entries) {
+            var key = entry.value.get_key (false);
+         
+            if (key.len () == 1 && key.get (0).isalpha ()) {
+                entry.value.show_variant (caps_lock);
+            }
+        }
+
+        key_widgets.get ("Caps_Lock").set_dark_mode (state);
+    }
+
+    public bool set_key_pressed (string keyval_name) {
+        if (last_pressed != null) {
+            last_pressed.set_dark_mode (false);
+        }
+
+        last_pressed = key_widgets.get (keyval_name);
+
+        if (last_pressed != null) {
+            last_pressed.set_dark_mode (true);
             return true;
         }
 

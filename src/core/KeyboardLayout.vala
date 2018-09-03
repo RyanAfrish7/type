@@ -21,7 +21,7 @@ class KeyboardLayout {
             row = (int) obj.get_int_member ("row");
             width = (int) obj.get_int_member ("width");
 
-            if(obj.has_member("is_nongraphic")) {
+            if (obj.has_member ("is_nongraphic")) {
                 is_nongraphic = obj.get_boolean_member ("is_nongraphic");
             }
         }
@@ -64,5 +64,25 @@ class KeyboardLayout {
         }
 
         this.from_json_string (json.str);
+    }
+
+    public Key get_key_from_name (string keyval_name) {
+        foreach (Key key in keys.data) {
+            if (key.name == keyval_name || key.mod_name == keyval_name) {
+                return key;
+            }
+        }
+
+        assert_not_reached();
+    }
+
+    public Key get_key_from_symbol (string symbol) {
+        foreach (Key key in keys.data) {
+            if (key.key == symbol || key.mod_key == symbol) {
+                return key;
+            }
+        }
+
+        assert_not_reached();
     }
 }

@@ -54,6 +54,14 @@ class TextWidget : Gtk.Box {
         error_char_indexes.append_val (position);
     }
 
+    public void remove_error_char (int position) {
+        for (int i = 0; i < error_char_indexes.length; i++) {
+            if (error_char_indexes.index(i) == position) {
+                error_char_indexes.remove_index (i);
+            }
+        }
+    }
+
     private void update () {
         Gtk.TextIter start_iter;
         Gtk.TextIter iter;
